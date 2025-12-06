@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <title>Home|Portifolio</title>
+</head>
+
+<body>
+  <!-- navbar-section -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/NAKABIRI_JOANITA_Initials.png" width="70" height="90" class="d-inline-block mr-2" alt="Logo">
+        Portfolio
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <form class="form-inline my-2 my-lg-0 ml-lg-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <style>
+    .search-box {
+      border-radius: 30px;
+      padding: 6px 15px;
+    }
+  </style>
+
+
+  <!-- hero section -->
+  <style>
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      padding: 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #080601;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #593961;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: blueviolet;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 0.75rem 1.8rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    .btn.primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn.primary:hover {
+      background: #0ea5e9;
+    }
+
+    .btn.secondary {
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .btn.secondary:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    /*  Responsive */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+  </style>
+
+  <section class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT COLUMN: TEXT -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="card shadow-lg hero-card">
+            <div class="card-body p-5">
+
+              <h1 class="font-weight-bold">
+                Hi, I am Joanita Nakabiri
+              </h1>
+
+              <h4 class="text-info mt-3">
+                Land Surveyor, Front-End Web Developer and graphic designer
+              </h4>
+
+              <p class="mt-4">
+                I combine precision in land surveying with creativity in front-end
+                web development to deliver accurate field solutions and modern,
+                responsive websites.
+                I do provide too instant graphics and branding for any company and ocassion.
+              </p>
+
+              <div class="mt-4">
+                <a href="#portfolio" class="btn btn-info mr-2">
+                  View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline-info">
+                  Contact Me
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: IMAGE -->
+        <div class="col-md-6 text-center">
+          <img src="images/joan.jpg" alt="Joanita Profile Photo" class="img-fluid rounded-circle profile-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <style>
+    .feature-card {
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-card i {
+      padding: 15px;
+      border-radius: 50%;
+      background-color: #f1f5f9;
+    }
+  </style>
+
+  <section class="features py-5">
+    <div class="container">
+
+      <!-- ROW 1 -->
+      <div class="row mb-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#eca4ec;">
+            <div class="card-body">
+              <i class="fas fa-laptop-code fa-3x text-info mb-3"></i>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Responsive websites using HTML, CSS, Bootstrap & JavaScript for small businesses and
+                portfolios.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#fdbffa;">
+            <div class="card-body">
+              <i class="fas fa-pencil-ruler fa-3x text-warning mb-3"></i>
+              <h5 class="card-title">Graphic Design</h5>
+              <p class="card-text">Clean, modern visuals for branding, posters, and digital content.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#f1b1ec;">
+            <div class="card-body">
+              <i class="fas fa-map-marker-alt fa-3x text-success mb-3"></i>
+              <h5 class="card-title">Land Surveying</h5>
+              <p class="card-text">Accurate boundary surveys, site measurements, and land documentation.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row">
+
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#fabdf0;">
+            <div class="card-body">
+              <i class="fas fa-cogs fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Technical Skills</h5>
+              <p class="card-text">HTML, CSS, Bootstrap, JavaScript, AutoCAD, GIS, and responsive design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#f7bbf2;">
+            <div class="card-body">
+              <i class="fas fa-users fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">Why Work With Me</h5>
+              <p class="card-text">Attention to detail, reliable, professional, and on-time project delivery.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow text-center h-100 feature-card" style="background-color:#eba8e5;">
+            <div class="card-body">
+              <i class="fas fa-project-diagram fa-3x text-info mb-3"></i>
+              <h5 class="card-title">Featured Projects</h5>
+              <p class="card-text">Showcasing my web development and surveying projects with images and descriptions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="info-section py-5">
+    <style>
+      .info-card {
+        border-radius: 20px;
+        color: #333;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .info-icon {
+        padding: 20px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #555;
+      }
+    </style>
+    <div class="container">
+
+      <!-- ROW 1 -->
+      <div class="row mb-4">
+
+        <!-- About Me -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #FFD6E0, #FFB6C1);">
+            <div class="card-body text-center">
+              <i class="fas fa-user fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">About Me</h5>
+              <p class="card-text">I am a dedicated Land Surveyor and Front-End Web Developer passionate about
+                precision, design, and problem-solving.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education / Background -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #C6F0FF, #A0E7FF);">
+            <div class="card-body text-center">
+              <i class="fas fa-graduation-cap fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">Education</h5>
+              <p class="card-text">Studied Land surveying and Web Development. Continuously learning new technologies
+                and surveying techniques.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies / Interests -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #FFFACD, #FFF0B3);">
+            <div class="card-body text-center">
+              <i class="fas fa-heart fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">Hobbies</h5>
+              <p class="card-text">I enjoy mapping landscapes, designing websites, and exploring creative projects in
+                both the digital and physical world.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="row">
+
+        <!-- Skills 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #E0FFD6, #B6FFB6);">
+            <div class="card-body text-center">
+              <i class="fas fa-code fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">Web Skills</h5>
+              <p class="card-text">HTML, CSS, Bootstrap, JavaScript, Responsive Design, GitHub version control.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #F0D6FF, #D8B6FF);">
+            <div class="card-body text-center">
+              <i class="fas fa-tools fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">Surveying Skills</h5>
+              <p class="card-text">Land measurement, boundary surveys, site mapping, AutoCAD, and GPS/Total Station
+                operation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact / Call-to-Action -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 info-card" style="background: linear-gradient(135deg, #FFDFA6, #FFC966);">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope fa-3x info-icon mb-3"></i>
+              <h5 class="card-title">Contact Me</h5>
+              <p class="card-text">Email: jonitaluck31@mail.com <br> Phone: +256 754 415 088 <br> Location: Kampala,
+                Uganda</p>
+              <a href="#contact" class="btn btn-light mt-2">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <style>
+    .footer-section {
+      background: linear-gradient(135deg, #FFD6E0, #C6F0FF);
+      border-radius: 20px 20px 0 0;
+    }
+
+    .footer-section h5 {
+      font-weight: 600;
+    }
+
+    .footer-section .footer-link {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .footer-section .footer-link:hover {
+      color: #FFC0CB;
+    }
+
+    .footer-section .social-icon {
+      display: inline-block;
+      margin: 0 8px;
+      color: #fff;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s;
+    }
+
+    .footer-section .social-icon:hover {
+      background-color: #fff;
+      color: #ff69b4;
+    }
+  </style>
+  <footer class="footer-section py-4" style="background: linear-gradient(135deg, #080601, #0a0700);">
+    <div class="container">
+      <div class="row text-light text-center text-md-left">
+
+        <!-- Column 1: Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Address / Contact -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Address</h5>
+          <p class="mb-1">Kampala, Uganda</p>
+          <p class="mb-1">Email: jonitaluck31@mail.com</p>
+          <p class="mb-0">Phone: +256 754 415 088</p>
+        </div>
+
+        <!-- Column 3: Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Follow Me</h5>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Column 4: Copyright -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Copyright</h5>
+          <p class="mb-0">&copy; 2025 Joanita. All rights reserved.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <title>About|Portifolio</title>
+</head>
+
+<body>
+  <!-- navbar-section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/NAKABIRI_JOANITA_Initials.png" width="70" height="90" class="d-inline-block mr-2" alt="Logo">
+        Portfolio
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">CV</a>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <form class="form-inline my-2 my-lg-0 ml-lg-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+  <style>
+    .search-box {
+      border-radius: 30px;
+      padding: 6px 15px;
+    }
+  </style>
+  <!-- about hero -->
+  <style>
+    /* About Hero */
+    .about-hero {
+      min-height: 80vh;
+      background:
+        linear-gradient(135deg, rgba(71, 3, 73, 0.85), rgba(230, 184, 236, 0.85)),
+        url('hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+    }
+
+    .about-hero h1 {
+      letter-spacing: 1px;
+    }
+
+    .about-hero p {
+      max-width: 650px;
+    }
+
+    /* Hero button */
+    .btn-hero {
+      background: #fff;
+      color: #6a11cb;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 28px;
+    }
+
+    .btn-hero:hover {
+      background: #f3e8ff;
+      color: #6a11cb;
+    }
+  </style>
+
+  <section class="about-hero d-flex align-items-center text-center text-lg-left">
+    <div class="container">
+      <div class="row justify-content-center justify-content-lg-start">
+        <div class="col-lg-8">
+          <h1 class="display-4 font-weight-bold">About Me</h1>
+
+          <p class="lead mt-3">
+            Blending land surveying, web development, and graphic design
+            to deliver accurate, creative, and digital solutions.
+          </p>
+
+          <p class="mt-3">
+            I help individuals and businesses turn ideas and spatial data
+            into impactful digital experiences and visual identities.
+          </p>
+          <ul>
+            <li>HTML, CSS, Bootstrap, JS</li>
+            <li>AutoCAD & Land Surveying</li>
+            <li>Problem-solving & Attention to detail</li>
+          </ul>
+
+          <a href="projects.html" class="btn btn-hero mt-4 mr-2">
+            View Projects
+          </a>
+          <a href="contact.html" class="btn btn-outline-light mt-4">
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ABOUT ME -->
+  <section class="section-padding text-center">
+    <div class="container">
+      <h2 class="section-title">My CV</h2>
+      <p class="lead">Download my professional CV to see my education, experience, and skills.</p>
+      <a href="files/Joanita_Nakabiri_cv.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">Who I Am</h2>
+          <p>
+            I am a committed and detail-oriented professional with experience in land surveying,
+            web development, and graphic designing. I combine analytical thinking with creativity
+            to deliver precise measurements, functional websites, and impactful visual designs.
+          </p>
+          <p>
+            My work focuses on accuracy, usability, and aesthetics—ensuring every project meets
+            technical standards while remaining user friendly.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="images/Laptop-for-Web-Development-1.jpg" class="img-fluid rounded shadow" alt="About Me"
+            height="400" width="500">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- services -->
+  <style>
+    .graphic-design-grid {
+      padding: 70px 0;
+      background: #f8f4ff;
+      /* light soft purple background */
+    }
+
+    .graphic-design-grid h2 {
+      text-align: center;
+      font-weight: 700;
+      color: #6a11cb;
+      margin-bottom: 15px;
+    }
+
+    .grid-divider {
+      width: 60px;
+      height: 4px;
+      background: #6a11cb;
+      margin: 15px auto 40px auto;
+      border-radius: 2px;
+    }
+
+    .graphic-card {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .graphic-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .graphic-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+  <section class="graphic-design-grid">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="grid-divider"></div>
+
+      <div class="row">
+        <!-- Image 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="graphic-card">
+            <img src="images/creative-workspace-ideas-to-trigger-your-creativity.webp" alt="graphic szpace">
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="graphic-card">
+            <img src="images/IMG-20240819-WA0033.jpg" alt="Land Surveying ">
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="graphic-card">
+            <img src="images/annie-spratt-FSFfEQkd1sc-unsplash-2-scaled.jpg" alt="office space">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Color Themes */
+    .card-purple {
+      background: linear-gradient(135deg, #6d1268, #663760);
+      color: #fff;
+    }
+
+    .card-soft-purple {
+      background: #f3e8ff;
+      border-left: 5px solid #6d1268;
+    }
+
+    .card-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    /* Improve card spacing */
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+  </style>
+
+  <section class="bg-light section-padding">
+    <div class="container text-center">
+      <h2 class="section-title">What I Do</h2>
+
+      <div class="row mt-4">
+        <!-- Land Surveying -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 rounded shadow service-card card-purple h-100">
+            <h5>Land Surveying</h5>
+            <p class="mb-0">
+              Accurate land measurements, boundary surveys, mapping,
+              and spatial data analysis using modern tools.
+            </p>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 rounded shadow service-card card-soft-purple h-100">
+            <h5 class="text-dark">Web Development</h5>
+            <p class="text-dark mb-0">
+              Responsive and user-friendly websites developed
+              using HTML, CSS, Bootstrap, and JavaScript.
+            </p>
+          </div>
+        </div>
+
+        <!-- Graphic Designing -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 rounded shadow service-card card-purple h-100">
+            <h5>Graphic Designing</h5>
+            <p class="mb-0">
+              Professional graphic designs, branding,
+              posters, and digital visuals for businesses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  MISSION & VALUES -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">My Mission</h2>
+          <p>
+            My mission is to design and develop high-quality digital solutions that help
+            individuals and businesses communicate their identity effectively online.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="section-title">My Values</h2>
+          <ul class="list-unstyled">
+            <li>✔ Creativity</li>
+            <li>✔ Quality & Clean Code</li>
+            <li>✔ Reliability</li>
+            <li>✔ User-Centered Design</li>
+            <li>✔ Continuous Growth</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  CALL TO ACTION -->
+  <section class="bg-dark text-white text-center section-padding">
+    <div class="container">
+      <h2 class="section-title">Let us Work Together</h2>
+      <p class="mb-4">
+        If you're looking for a passionate and reliable professional, I would love to collaborate.
+      </p>
+      <a href="projects.html" class="btn btn-outline-light me-2">View Projects</a>
+      <a href="contact.html" class="btn btn-primary">Contact Me</a>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <style>
+    .footer-section {
+      background: linear-gradient(135deg, #FFD6E0, #C6F0FF);
+      border-radius: 20px 20px 0 0;
+    }
+
+    .footer-section h5 {
+      font-weight: 600;
+    }
+
+    .footer-section .footer-link {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s;
+    }
+
+    .footer-section .footer-link:hover {
+      color: #FFC0CB;
+    }
+
+    .footer-section .social-icon {
+      display: inline-block;
+      margin: 0 8px;
+      color: #fff;
+      font-size: 1.2rem;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: all 0.3s;
+    }
+
+    .footer-section .social-icon:hover {
+      background-color: #fff;
+      color: #ff69b4;
+    }
+  </style>
+  <footer class="footer-section py-4" style="background: linear-gradient(135deg, #080601, #0a0700);">
+    <div class="container">
+      <div class="row text-light text-center text-md-left">
+
+        <!-- Column 1: Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Address / Contact -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Address</h5>
+          <p class="mb-1">Kampala, Uganda</p>
+          <p class="mb-1">Email: jonitaluck31@mail.com</p>
+          <p class="mb-0">Phone: +256 754 415 088</p>
+        </div>
+
+        <!-- Column 3: Social Media -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Follow Me</h5>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Column 4: Copyright -->
+        <div class="col-md-3 mb-3">
+          <h5 class="footer-title">Copyright</h5>
+          <p class="mb-0">&copy; 2025 Joanita. All rights reserved.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
