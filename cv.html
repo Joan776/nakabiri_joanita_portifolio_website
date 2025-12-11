@@ -272,6 +272,64 @@
       </div>
     </div>
   </footer>
+  <style>
+    /* -------------------------
+   Base Styles (Mobile First)
+-------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Example element */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+/* -----------------------------------
+   Tablet Screens (≥ 600px – ≤ 900px)
+------------------------------------ */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* ------------------------------------------------
+   Mini Computers / Laptops (≥ 901px – ≤ 1200px)
+------------------------------------------------- */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* 
+   Large Screens (≥ 1201px and above) */
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+}
+
+  </style>
 </body>
 
 </html>

@@ -79,7 +79,7 @@
       min-height: 80vh;
       background:
         linear-gradient(135deg, rgba(71, 3, 73, 0.85), rgba(230, 184, 236, 0.85)),
-        url('hero-bg.jpg') center/cover no-repeat;
+        url(images/web-design-3411373_1280.jpg) center/cover no-repeat;
       color: #fff;
     }
 
@@ -430,6 +430,65 @@
 
       </div>
     </div>
+    <style>
+      /* -------------------------
+   Base Styles (Mobile First)
+-------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Example element */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+/* -----------------------------------
+   Tablet Screens (≥ 600px – ≤ 900px)
+------------------------------------ */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* ------------------------------------------------
+   Mini Computers / Laptops (≥ 901px – ≤ 1200px)
+------------------------------------------------- */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+/* ----------------------------------------
+   Large Screens (≥ 1201px and above)
+----------------------------------------- */
+@media screen and (min-width: 1201px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+}
+
+    </style>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -213,6 +213,8 @@
     .feature-card {
       border-radius: 15px;
       transition: transform 0.3s, box-shadow 0.3s;
+      margin: auto;
+      width: 100%;
     }
 
     .feature-card:hover {
@@ -222,16 +224,26 @@
 
     .feature-card i {
       padding: 15px;
-      border-radius: 50%;
+      border-radius: 100%;
       background-color: #f1f5f9;
+
+
+    }
+
+    .container h1 {
+      text-align: center;
+      font-weight: 700;
+      color: #6a11cb;
+      margin-bottom: 15px;
     }
   </style>
 
   <section class="features py-5">
     <div class="container">
-
+      <h1>My Services</h1>
       <!-- ROW 1 -->
       <div class="row mb-4">
+
 
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
@@ -311,31 +323,37 @@
     </div>
   </section>
 
+
+  <style>
+    .info-card {
+      border-radius: 20px;
+      color: #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      width: 100%;
+    }
+
+    .info-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-icon {
+      padding: 20px;
+      border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #555;
+
+
+    }
+  </style>
   <section class="info-section py-5">
-    <style>
-      .info-card {
-        border-radius: 20px;
-        color: #333;
-        transition: transform 0.3s, box-shadow 0.3s;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .info-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      }
-
-      .info-icon {
-        padding: 20px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.6);
-        color: #555;
-      }
-    </style>
     <div class="container">
-
+      <h1>About me</h1>
       <!-- ROW 1 -->
       <div class="row mb-4">
+
 
         <!-- About Me -->
         <div class="col-md-4 mb-4">
@@ -501,7 +519,64 @@
       </div>
     </div>
   </footer>
+  <style>
+    /* -------------------------
+   Base Styles (Mobile First)
+-------------------------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Example element */
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+
+    /* -----------------------------------
+   Tablet Screens (≥ 600px – ≤ 900px)
+------------------------------------ */
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      .container {
+        max-width: 700px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    /* ------------------------------------------------
+   Mini Computers / Laptops (≥ 901px – ≤ 1200px)
+------------------------------------------------- */
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+      .container {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+
+    /* Large Screens (≥ 1201px and above) */
+
+    @media screen and (min-width: 1201px) {
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

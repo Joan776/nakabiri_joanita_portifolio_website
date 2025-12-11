@@ -72,62 +72,79 @@
     }
   </style>
   <!-- services -->
-  <!-- /* Services Intro with Background Image */ -->
-  <style>
-    .services-hero {
-      position: relative;
-      background:
-        linear-gradient(rgba(57, 9, 71, 0.85),
-          rgba(109, 44, 129, 0.85)),
-        url('services-bg.jpg') center/cover no-repeat;
-      color: #fff;
+
+   <style>
+    /* -------------------------
+       HERO SECTION
+    --------------------------*/
+    .hero {
+      height: 90vh;
+      width: 100%;
+      background: url(images/office.jpg) center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: rgb(19, 7, 24);
     }
 
-    .services-hero .section-title {
-      color: #fff;
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .services-hero .section-intro {
-      color: #f1f1f1;
+    .hero-content p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
     }
 
-    /* Fix mobile parallax issues */
-    @media (max-width: 768px) {
-      .services-parallax {
-        background-attachment: scroll;
+    .btn-hero {
+      background: #ff4081;
+      padding: 12px 26px;
+      color: rgb(32, 10, 37);
+      border-radius: 30px;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    /* --------------------------
+       RESPONSIVE: Tablets
+    ---------------------------*/
+    @media (max-width: 992px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
       }
     }
 
-    .section-title {
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+    /* --------------------------
+       RESPONSIVE: Phones
+    ---------------------------*/
+    @media (max-width: 768px) {
+      .hero {
+        height: 70vh;
+      }
 
-    .section-intro {
-      max-width: 750px;
-      margin: 0 auto;
-      color: #f1f1f1;
-    }
+      .hero-content h1 {
+        font-size: 2rem;
+      }
 
-    .service-divider {
-      width: 60px;
-      height: 4px;
-      background: #fff;
-      margin: 20px auto;
-      border-radius: 2px;
+      .hero-content p {
+        font-size: 1.1rem;
+      }
     }
   </style>
+</head>
 
-  <section class="section-padding text-center services-hero">
-    <div class="container">
-      <h2 class="section-title">My Services</h2>
+<body>
 
-      <div class="service-divider bg-white"></div>
-
-      <p class="lead section-intro">
-        Professional land surveying, web development, and graphic design services
-        tailored to meet client needs with accuracy, creativity, and modern design solutions.
-      </p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Professional Solutions for Your Needs</p>
+      <a href="#services" class="btn-hero">Explore More</a>
     </div>
   </section>
 
